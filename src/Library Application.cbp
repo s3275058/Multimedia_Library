@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Library Application" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Library Application" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D__WXDEBUG__" />
+					<Add directory="D:/Software/wxWidgets-3.0.0/lib/gcc_lib/mswd" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="D:/Software/wxWidgets-3.0.0/lib/gcc_lib/mswd" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="D:\Software\wxWidgets-3.0.0\lib\gcc_lib\libwxmsw30u.a" />
+					<Add library="libwxpngd.a" />
+					<Add library="libwxjpegd.a" />
+					<Add library="libwxtiffd.a" />
+					<Add library="libwxzlibd.a" />
+					<Add library="sqlite3" />
+					<Add directory="D:/Software/wxWidgets-3.0.0/lib/gcc_lib" />
+					<Add directory="../lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Library Application" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="D:/Software/wxWidgets-3.0.0/lib/gcc_lib/msw" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="D:/Software/wxWidgets-3.0.0/lib/gcc_lib/msw" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="libwxmsw29.a" />
+					<Add library="libwxpng.a" />
+					<Add library="libwxjpeg.a" />
+					<Add library="libwxtiff.a" />
+					<Add library="libwxzlib.a" />
+					<Add directory="D:/Software/wxWidgets-3.0.0/lib/gcc_lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option="-D__GNUWIN32__" />
+			<Add option="-D__WXMSW__" />
+			<Add option='[[if (PLATFORM == PLATFORM_MSW &amp;&amp; (GetCompilerFactory().GetCompilerVersionString(_T(&quot;gcc&quot;)) &gt;= _T(&quot;4.0.0&quot;))) print(_T(&quot;-Wno-attributes&quot;));]]' />
+			<Add option="-Wall" />
+			<Add directory="D:/Software/wxWidgets-3.0.0/include" />
+			<Add directory="D:/Software/wxWidgets-3.0.0/contrib/include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="D:/Software/wxWidgets-3.0.0/include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-mthreads" />
+			<Add library="libkernel32.a" />
+			<Add library="libuser32.a" />
+			<Add library="libgdi32.a" />
+			<Add library="libwinspool.a" />
+			<Add library="libcomdlg32.a" />
+			<Add library="libadvapi32.a" />
+			<Add library="libshell32.a" />
+			<Add library="libole32.a" />
+			<Add library="liboleaut32.a" />
+			<Add library="libuuid.a" />
+			<Add library="libcomctl32.a" />
+			<Add library="libwsock32.a" />
+			<Add library="libodbc32.a" />
+		</Linker>
+		<Unit filename="Application.cpp" />
+		<Unit filename="Application.h" />
+		<Unit filename="Borrower.cpp" />
+		<Unit filename="Borrower.h" />
+		<Unit filename="Collection.cpp" />
+		<Unit filename="Collection.h" />
+		<Unit filename="DialogAddInstancesApp.cpp" />
+		<Unit filename="DialogAddInstancesApp.h" />
+		<Unit filename="DialogConfirmApp.cpp" />
+		<Unit filename="DialogConfirmApp.h" />
+		<Unit filename="DialogDeleteErrorApp.cpp" />
+		<Unit filename="DialogDeleteErrorApp.h" />
+		<Unit filename="DialogDownloadLocationApp.cpp" />
+		<Unit filename="DialogDownloadLocationApp.h" />
+		<Unit filename="DialogSaveFileApp.cpp" />
+		<Unit filename="DialogSaveFileApp.h" />
+		<Unit filename="FrameBorrowItemApp.cpp" />
+		<Unit filename="FrameBorrowItemApp.h" />
+		<Unit filename="FrameBorrowerApp.cpp" />
+		<Unit filename="FrameBorrowerApp.h" />
+		<Unit filename="FrameChangeItemStatusApp.cpp" />
+		<Unit filename="FrameChangeItemStatusApp.h" />
+		<Unit filename="FrameCollectionApp.cpp" />
+		<Unit filename="FrameCollectionApp.h" />
+		<Unit filename="FrameCreateEditBorrowerApp.cpp" />
+		<Unit filename="FrameCreateEditBorrowerApp.h" />
+		<Unit filename="FrameCreateEditCollectionApp.cpp" />
+		<Unit filename="FrameCreateEditCollectionApp.h" />
+		<Unit filename="FrameCreateEditInstanceApp.cpp" />
+		<Unit filename="FrameCreateEditInstanceApp.h" />
+		<Unit filename="FrameDownloadApp.cpp" />
+		<Unit filename="FrameDownloadApp.h" />
+		<Unit filename="FrameInstanceApp.cpp" />
+		<Unit filename="FrameInstanceApp.h" />
+		<Unit filename="FrameMainApp.cpp" />
+		<Unit filename="FrameMainApp.h" />
+		<Unit filename="FrameReportCollectionApp.cpp" />
+		<Unit filename="FrameReportCollectionApp.h" />
+		<Unit filename="FrameReportInstanceApp.cpp" />
+		<Unit filename="FrameReportInstanceApp.h" />
+		<Unit filename="FrameReportOverdueApp.cpp" />
+		<Unit filename="FrameReportOverdueApp.h" />
+		<Unit filename="FrameReturnItemApp.cpp" />
+		<Unit filename="FrameReturnItemApp.h" />
+		<Unit filename="Functions.cpp" />
+		<Unit filename="Functions.h" />
+		<Unit filename="Instance.cpp" />
+		<Unit filename="Instance.h" />
+		<Unit filename="Library.cpp" />
+		<Unit filename="Library.h" />
+		<Unit filename="Utility.h" />
+		<Unit filename="noname.cpp" />
+		<Unit filename="noname.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
